@@ -1,14 +1,36 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Speech Demo</title>
+    <title>My Speech Files</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        tr:nth-child(even){background-color: #f2f2f2;}
+    </style>
 </head>
 <body>
-  <h1>Speech Demo</h1>
-  <p>Listen to the tracks below:</p>
-  <audio controls>
-    <source src="path-to-your-music-file.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
+
+<h2>My Speech Files</h2>
+
+<table>
+  <tr>
+    <th>Query</th>
+    <th>Answer</th>
+  </tr>
+  <!-- Repeat this block for each query-answer pair -->
+  <tr>
+    <td><audio controls><source src="query_1.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio></td>
+    <td><audio controls><source src="answer_1.mp3" type="audio/mpeg">Your browser does not support the audio tag.</audio></td>
+  </tr>
+  <!-- Add more rows as needed -->
+</table>
+
 </body>
 </html>
